@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+#VisRecall
 
-## Project info
+Search, Save, and Recall Visual References — Instantly
 
-**URL**: https://lovable.dev/projects/2794c204-280f-45a3-b832-1b525ebfa31e
+VisRecall is a modern reference hub for artists, powered by text-to-image retrieval.
+It lets you search your saved images using natural language, so you can quickly find visual references — poses, compositions, lighting setups, outfits, etc. — without endless folder digging.
 
-## How can I edit this code?
+Think of it as your personal visual memory, organized by meaning instead of file names.
 
-There are several ways of editing your application.
+🧠 What Is VisRecall?
 
-**Use Lovable**
+Artists collect thousands of reference images, but they’re hard to organize and even harder to find later.
+VisRecall fixes that by using CLIP-based image embeddings to understand what’s in each image — so you can search by concept, not keyword.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2794c204-280f-45a3-b832-1b525ebfa31e) and start prompting.
+“Show me a low-angle shot of a samurai in rain.”
+“Find all references with backlighting.”
+“Pose similar to a leaping figure.”
 
-Changes made via Lovable will be committed automatically to this repo.
+VisRecall retrieves the closest matches instantly, helping artists rediscover and reuse their references intuitively.
 
-**Use your preferred IDE**
+🚀 Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔍 Text-to-Image Search:
+Find references by describing what you remember — not by browsing folders.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🖼️ Smart Image Embeddings:
+Every image is encoded using CLIP models (LAION or Danbooru variants) for semantic understanding.
 
-Follow these steps:
+📂 Reference Hub:
+Organize, tag, and preview your visual library in one clean dashboard.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧩 Multi-Model Support:
+Switch between general-purpose and art-specific embeddings for better accuracy.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+⚡ Instant Retrieval:
+Searches return semantically relevant results in milliseconds.
 
-# Step 3: Install the necessary dependencies.
-npm i
+☁️ Supabase Integration (Optional):
+Store embeddings and metadata in the cloud for access anywhere.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🧩 Tech Stack
+Layer	Technology
+Frontend	React + TypeScript + Vite
+Backend	Supabase (Auth + Database)
+Embedding Engine	LAION & Danbooru CLIP Models
+Vector Search	Supabase pgvector / local FAISS index
+Styling	Tailwind + shadcn/ui
+State	React Query / Zustand
+🧰 Example Use Cases
 
-**Edit a file directly in GitHub**
+An artist searches for “over-the-shoulder camera angles” and finds all relevant photo studies.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+A character designer types “baggy streetwear, male character” to pull up similar fashion references.
 
-**Use GitHub Codespaces**
+A background painter recalls “sunset cityscapes with rim light” from months ago in seconds.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+💡 Philosophy
 
-## What technologies are used for this project?
+VisRecall is built for artists who collect and curate, not generate.
+It’s meant to make your existing visual library searchable, meaningful, and fast — turning chaos into creativity.
 
-This project is built with:
+“You don’t need AI to make art — just a better way to remember what inspires it.”
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+📈 Roadmap
+Feature	Status
+Local text-to-image retrieval	🟢 Working
+Supabase cloud sync	🟡 Planned
+Multi-user reference sharing	🟡 Planned
+Embedding visualization (t-SNE map)	⚪ Future update
+Mobile-friendly dashboard	⚪ Future update
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2794c204-280f-45a3-b832-1b525ebfa31e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+👤 Author
+VisRecall is developed by me, Khiar Ibrahim, a character artist and software engineer passionate about building tools that support real artists instead of replacing them.
